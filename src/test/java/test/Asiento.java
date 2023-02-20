@@ -6,9 +6,10 @@ public class Asiento {
 	int precio;
 	int registro;
 
-	void cambiarColor(String unColor) {
-		if (Arrays.asList("rojo","verde","amarillo","negro","blanco").contains(unColor)) {
-			color = unColor;
+	void cambiarColor(String color) {
+		if (Arrays.asList("rojo","verde","amarillo","negro","blanco").contains(this.color)) {
+			
+			this.color = color;
 		}
 	}
 	
