@@ -7,7 +7,7 @@ public class Asiento {
 	int registro;
 
 	void cambiarColor(String color) {
-		if (Arrays.asList("rojo","verde","amarillo","negro","blanco").contains(this.color)) {
+		if (Arrays.asList("rojo","verde","amarillo","negro","blanco").contains(color)) {
 			
 			this.color = color;
 		}
