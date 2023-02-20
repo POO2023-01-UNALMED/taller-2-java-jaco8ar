@@ -6,7 +6,7 @@ public class Auto {
 	public int precio;
 	public Asiento[] asientos;
 	public String marca;
-	Motor motor;
+	public Motor motor;
 	public int registro;
 	static int cantidadCreados;
 	
