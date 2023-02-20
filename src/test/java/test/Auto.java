@@ -2,15 +2,15 @@ package test;
 
 
 public class Auto {
-	public String modelo;
-	public int precio;
-	public Asiento[] asientos;
-	public String marca;
-	public Motor motor;
-	public int registro;
+	String modelo;
+	int precio;
+	Asiento[] asientos;
+	String marca;
+	Motor motor;
+	int registro;
 	static int cantidadCreados;
 	
-	public int cantidadAsientos(Auto auto) {
+	int cantidadAsientos(Auto auto) {
 		int count = 0;  
 		for (Asiento i : auto.asientos) {
 			if (i != null) {
@@ -20,7 +20,7 @@ public class Auto {
 		return count;
 	}
 	
-	public String verificarIntegridad(Auto auto) {
+	String verificarIntegridad(Auto auto) {
 		if (auto.registro == auto.motor.registro) {
 			for (Asiento asI : auto.asientos) {				
 				if (asI != null) {
